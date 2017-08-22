@@ -24,3 +24,9 @@ person->name=ns;
 私有函数是只写在.m文件中，而不写在.h文件中。因为函数没有权限控制。
 
 诊断 assert.h 这个是系统的头文件 所以要用尖括号#import <assert.h>这个是crt函数，是c语言中的。assert函数如果是true的话就正常过去，如果false就崩溃掉
+
+
+//name[0]='d';这个就报错了 因为是字符常量 是不能修改的
+    //char ns[]="jack"
+    //person->name=ns与person->name="jack";是不同的 第一个是数组 是可以修改的，第二个是常量字符串
+    //数组名是常量 不能赋值的 只能初始化的时候赋值 而且不能数组名＋＋ 操作
